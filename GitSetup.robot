@@ -1,5 +1,5 @@
 *** Settings ***
-Resource                      ../resources/common.robot
+Resource                      common.robot
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 
@@ -7,6 +7,7 @@ Suite Teardown                End suite
 *** Test Cases ***
 Entering A Lead
     [tags]                    Lead                        Git Repo Exercise
+    # added the line at crt
     Appstate                  Home
     LaunchApp                 Sales
 
